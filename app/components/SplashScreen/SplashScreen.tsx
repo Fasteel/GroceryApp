@@ -1,8 +1,13 @@
-import React from 'react';
-import {Box} from '@app/design-system';
+import React, {useEffect} from 'react';
+import {Box, theme} from '@app/design-system';
 import Svg, {Circle, Path} from 'react-native-svg';
+import {StatusBar} from 'react-native';
 
 function SplashScreen() {
+  useEffect(() => {
+    StatusBar.setBackgroundColor(theme.colors.primary);
+  }, []);
+
   return (
     <Box
       flex={1}

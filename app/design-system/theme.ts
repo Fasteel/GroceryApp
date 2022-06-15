@@ -20,9 +20,6 @@ const theme = createTheme({
     phone: 0,
     tablet: 768,
   },
-  boxVariants: {
-    defaults: {},
-  },
 });
 
 export type Theme = typeof theme;
